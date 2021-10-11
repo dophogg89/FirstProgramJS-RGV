@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Titulo da pagina-->>
+    <title>Hello, World!</title>
+<!--Comandos CSS3-->
+    <style>
+        body {
+            background-color: aquamarine; /*Cor do fundo*/
+            color:rgb(32, 32, 32); /*cor da letra*/
+            font-family: sans-serif; /*tipo de letra*/
+            text-align: center; /*alinhamento do texto*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <h2>Olá, Mundo!</h2>
+    <script>
+//window.alert = exibe um aleta com uma mensagem;
+        //window.alert('Hello, world! Vou aprender JavaScript do basico ao avançado. Sou Rodolpho Guilherme')
+        alert('Hello, world! Vou aprender JavaScript do basico ao avançado. Sou Rodolpho Guilherme')
+//window.confirm = exibe uma janela com botão ok e cancelar;
+        //window.confirm('Você poderia responder algumas perguntas?')
+        confirm('Você poderia responder algumas perguntas?')
+//window.prompt = exibe uma janela com uma caixa pra receber um retorno; 
+        //var nome = window.prompt('Qual é seu nome?')
+        var nome = prompt('Qual é seu nome?')
+        //window.alert('Agora ' + nome + ' preciso que você digite dois numeros para somar.')
+        alert('Agora ' + nome + ' preciso que você digite dois numeros para somar.')
+//(parseInt e parsefloat) serve pra converter String para Número
+        //var n1 = Number.parseInt(prompt('Digite o primeiro número.'))
+        var n1 = parseInt(prompt('Digite o primeiro número.'))
+        var n2 = parseInt(prompt('Digite o segundo número'))
+        //var n2 = Number(prompt('Digite o segundo número'))
+        var s1 = n1 + n2
+/*
+(número + número = adição/soma)
+(String + String = Concaternação)
+*/
+        //alert('A soma de ' + n1 + ' e ' +n2+ ' é ' + s1 + ' Certo?')
+//Para usar o "tamplate String" (place rouder => ${}) é necessario colocar entre crases ``
+        alert(`A soma de ${n1} e ${n2} é ${s1} Certo?`)
+        document.writeln(`A soma de ${n1} e ${n2} é ${s1} Certo?</br>`)//</br> para pular uma linha 
+//<Strong> => serve para deixar as letras em negrito
+        document.writeln(`<Strong>${nome.toUpperCase()}</Strong> seu nome tem ${nome.length} letras.`)
+    </script>
+</body>
+</html>
